@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(19, 22, 28); /* lighter blue */
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    background-color: rgb(3, 45, 99);
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content {
+    padding: 15px;
+    margin: 10px;
+    background: linear-gradient(145deg, #0e2954, #1e3e80);
+    color: white;
+    width: 400px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content h1 {
+    color: rgb(173, 216, 255); /* light blue */
+    transition: color 0.3s ease;
+}
+
+.content h1:hover {
+    color: rgb(255, 255, 255);
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #8e96ab;
+}
+
+.delsugg {
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3f51b5, #1a237e);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delsugg:hover {
+    background: #6981a4;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+
+.dialog {
+    z-index: 2;
+    width: 40%;
+    background: linear-gradient(to bottom right, #1f3478, #0f1a30);
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    border-radius: 10px;
+    padding: 40px;
+    display: none;
+    color: white;
+}
+
+.dialog input,
+.dialog textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-bottom: 2px solid #0e1a9a;
+}
+
+.dialog input::placeholder,
+.dialog textarea::placeholder {
+    color: #d0e0ff;
+}
+
+#sugform {
+    color: aliceblue;
+}
+
+.dialog textarea {
+    border: 2px solid #1a237e;
+}
+
+.dialog button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    background: #1a237e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dialog button:hover {
+    background: #0d47a1;
+}
+
+.add {
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 15px;
+    background: #093c8a;
+    color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 50, 0.3);
+    transition: background 0.3s ease;
+}
+
+.add:hover {
+    background: #587dd4;
+}

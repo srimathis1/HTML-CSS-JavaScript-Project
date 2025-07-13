@@ -1,0 +1,55 @@
+body{
+    background-image:url('IMAGES/cinebgg.jpg');
+    color:white;
+}
+.title{
+    font-size:30px;
+    opacity:0.8;
+}
+.shiddat{
+    display:inline-block;
+    background-color:black;
+    border-width:1px;
+    opacity:0.8;
+    padding:40px;
+    margin-left:50px;
+}
+.shiddat button{
+    padding:10px;
+    background-color: grey;
+    margin:30px;
+    border-radius:20%;
+}
+.yjhd button{
+    padding:10px;
+    background-color: grey;
+    margin:30px;
+    border-radius:20%;
+}
+.yjhd{
+    display:inline-block;
+    background-color:black;
+    border-width:1px;
+    opacity:0.8;
+    padding:40px;
+    margin-left:200px;
+}
+.suggestion a{
+    font-size: 50px;
+}
+.suggestion a:hover{
+    color:aquamarine;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* On small screens, stack column-wise */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

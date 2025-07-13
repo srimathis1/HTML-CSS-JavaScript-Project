@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: rgb(206, 143, 143);
+}
+
+.shiddat {
+    background-color: rgb(65, 28, 28);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.content {
+    background-color: rgb(206, 143, 143);
+    color: black;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-style: italic;
+    display: inline-block;
+    padding: 10px;
+}
+
+.content h2 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content h2:hover {
+    color: white;
+}
+
+.content2 {
+    background-color: rgb(206, 143, 143);
+    color: black;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-style: italic;
+    display: inline-block;
+    padding: 10px;
+}
+
+.content2 h2 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content2 h2:hover {
+    color: white;
+}
+
+.photo {
+    width: 100px;
+}
+
+/* star rating */
+.stars {
+    display: flex;
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.star {
+    color: gray;
+    transition: color 0.2s;
+}
+
+.star.active,
+.star.hover {
+    color: gold;
+}
+
+p {
+    font-size: 24px;
+    margin-left: 100px;
+    margin-top: 10px;
+}

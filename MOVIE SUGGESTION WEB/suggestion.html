@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Suggestion</title>
+  <link rel="stylesheet" href="suggestion.css" />
+</head>
+<body>
+  <div class="head">
+    <h1>Movie Suggestions</h1>
+  </div>
+
+  <div id="whole"></div>
+
+  <!-- Add Suggestion Floating Button -->
+  <button class="add">+</button>
+
+  <!-- Background overlay -->
+  <div class="popup"></div>
+
+  <!-- Suggestion Dialog Box -->
+  <div class="dialog">
+    <form id="sugform">
+      <input type="text" id="addtitle" placeholder="Movie Title" required />
+      <input type="text" id="addlang" placeholder="Language" required />
+      <input type="text" id="addgenre" placeholder="Genre" required />
+      <textarea id="desc" rows="4" placeholder="Description" required></textarea>
+      <input type="file" id="poster" accept="image/*" required />
+      <br /><br />
+      <button type="submit" id="addsug">Add Suggestion</button>
+
+      <button type="button" id="cancelsug">Cancel</button>
+    </form>
+  </div>
+
+  <script src="suggestion.js"></script>
+</body>
+</html>
